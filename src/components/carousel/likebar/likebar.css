@@ -1,0 +1,25 @@
+.icon-wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.lil-icon{
+	display: flex;
+	justify-content: center;
+	width: 33%;
+	color: #A4A7AC;
+	border-radius: 5px;
+	padding: 5px;
+	white-space: pre;
+
+	/* font-weight: normal; */
+}
+
+.lil-icon:hover{
+	background-color: #3A3B3C;
+}
+

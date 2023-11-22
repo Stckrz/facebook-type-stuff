@@ -1,0 +1,110 @@
+.carousel-container{
+	margin: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: #242526;
+	/* height: 485px; */
+	width: 640px;
+	border-radius: 1em;
+	padding: 15px;
+	overflow: hidden;
+}
+
+.description{
+	font-weight: normal;
+	margin: 10px;
+}
+
+.item-box-wrapper{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	width: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	counter-reset: item;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+	scroll-snap-align: center;
+}
+.item-box-wrapper::-webkit-scrollbar{
+	display: none;
+}
+
+.like-bar-container{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.nextbutton{
+	display: flex;
+	z-index: 5;
+	align-items: center;
+	justify-content: center;
+	font-size: xx-large;
+	background-color: #3E4042;
+	/* top: 20%; */
+	/* right: 0; */
+	left: 88%;
+	top: 50%;
+	position: absolute;
+	height: 55px;
+	width: 55px;
+	border-radius: 100px;
+	color: grey;
+}
+.prevbutton{
+	display: flex;
+	z-index: 5;
+	align-items: center;
+	justify-content: center;
+	font-size: xx-large;
+	background-color: #3E4042;
+	/* right: 0; */
+	left:5%;
+	top: 50%;
+	position: absolute;
+	height: 55px;
+	width: 55px;
+	border-radius: 100px;
+	color: grey;
+}
+
+.nextbutton:hover{
+	background-color: #525455;
+}
+
+.prevbutton:hover{
+	background-color: #525455;
+}
+
+.top-bar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.company{
+	display: flex;
+	width: 200px;
+	gap: 8px;
+}
+
+.company-logo{
+	background-color: #231f20;
+	/* border: 1px solid blue; */
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+
+	object-fit: contain;
+}
+
+.community{
+	height: 35px;
+	width: 100%;
+	border-bottom: 1px solid grey;
+}
