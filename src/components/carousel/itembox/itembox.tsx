@@ -4,13 +4,11 @@ import './itembox.css';
 
 interface ItemBoxProps{
 		name: string;
-		price: string;
 		imageurl: string;
 		itemurl: string;
 }
 
-
-export const ItemBox: React.FC<ItemBoxProps> = ({name, itemurl, price, imageurl}) => {
+export const ItemBox: React.FC<ItemBoxProps> = ({name, itemurl, imageurl}) => {
 
 	return (
 		<>
@@ -20,14 +18,11 @@ export const ItemBox: React.FC<ItemBoxProps> = ({name, itemurl, price, imageurl}
 				<div className="description-container">
 				<div className="item-name-box">
 					<div className='title'>{name}</div>
-					{/* <div className="price">{price}</div> */}
 				</div>
 					<button className="shop-now-button">Shop now</button>
 					</div>
 			</a>
 			</div>
 		</>
-
 	)
-
 }

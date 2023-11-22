@@ -1,7 +1,5 @@
 .icon-wrapper{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	width: 100%;
 	margin-top: 10px;
 	cursor: pointer;
@@ -15,8 +13,6 @@
 	border-radius: 5px;
 	padding: 5px;
 	white-space: pre;
-
-	/* font-weight: normal; */
 }
 
 .lil-icon:hover{
