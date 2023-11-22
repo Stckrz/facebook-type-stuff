@@ -7,9 +7,12 @@ import { Carousel } from '../actual-carousel/actual-carousel';
 import { itemsforsale } from '../../../library/itemsforsale';
 import amazon from '../../../library/photos/amazon.jpg';
 
+interface PostProps{
+	description: string;
+	children: React.ReactNode
+}
 
-export const Post: React.FC = () => {
-	const [scrollvalue, setScrollValue] = useState(0);
+export const Post: React.FC<PostProps> = ({description, children}) => {
 	const [likes, setLikes] = useState(false);
 	const [comments, setComments] = useState(0);
 	const [shares, setShares] = useState(0);
@@ -23,14 +26,10 @@ export const Post: React.FC = () => {
 					</div>
 					<div>...</div>
 				</div>
-				<p className="description">Check out these great deals on styles from Amazon!</p>
+				<p className="description">{description}</p>
 
 				<div className="content">
-					<Carousel
-						scrollvalue={scrollvalue}
-						setScrollValue={setScrollValue}
-						itemsarray={itemsforsale}
-					/>
+					{children}
 				</div>
 
 				{likes === true &&

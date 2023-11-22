@@ -1,0 +1,11 @@
+.image-post-container{
+	width: 100%;
+	aspect-ratio: 16/9;
+	background-color: white;
+}
+
+.image-post-container img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}

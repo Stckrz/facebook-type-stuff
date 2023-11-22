@@ -1,6 +1,6 @@
 import React from 'react';
 import { ItemBox } from '../itembox/itembox';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,11 +12,10 @@ interface ItemsForSale {
 
 interface CarouselProps {
 	itemsarray: ItemsForSale[];
-	scrollvalue: number;
-	setScrollValue: Function;
 }
 
-export const Carousel: React.FC<CarouselProps> = ({ scrollvalue, setScrollValue, itemsarray }) => {
+export const Carousel: React.FC<CarouselProps> = ({ itemsarray }) => {
+	const [scrollvalue, setScrollValue] = useState(0);
 	const ref = useRef<HTMLDivElement>(null);
 
 	const scroll = (scrollOffset: number) => {
