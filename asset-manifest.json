@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/facebook-type-stuff/static/css/main.1fba77ed.css",
-    "main.js": "/facebook-type-stuff/static/js/main.a9ab2923.js",
+    "main.css": "/facebook-type-stuff/static/css/main.f21e60ab.css",
+    "main.js": "/facebook-type-stuff/static/js/main.165896eb.js",
     "static/js/787.f875e176.chunk.js": "/facebook-type-stuff/static/js/787.f875e176.chunk.js",
     "static/media/roomba.jpg": "/facebook-type-stuff/static/media/roomba.b4be7b21cc4bb4363703.jpg",
     "static/media/skirt.jpg": "/facebook-type-stuff/static/media/skirt.41ac230eaca53f3e412f.jpg",
@@ -11,12 +11,12 @@
     "static/media/dress.jpg": "/facebook-type-stuff/static/media/dress.664bea2bb4bf64a5a763.jpg",
     "static/media/skirt2.jpg": "/facebook-type-stuff/static/media/skirt2.bb568cf2a0067c06c4ca.jpg",
     "index.html": "/facebook-type-stuff/index.html",
-    "main.1fba77ed.css.map": "/facebook-type-stuff/static/css/main.1fba77ed.css.map",
-    "main.a9ab2923.js.map": "/facebook-type-stuff/static/js/main.a9ab2923.js.map",
+    "main.f21e60ab.css.map": "/facebook-type-stuff/static/css/main.f21e60ab.css.map",
+    "main.165896eb.js.map": "/facebook-type-stuff/static/js/main.165896eb.js.map",
     "787.f875e176.chunk.js.map": "/facebook-type-stuff/static/js/787.f875e176.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fba77ed.css",
-    "static/js/main.a9ab2923.js"
+    "static/css/main.f21e60ab.css",
+    "static/js/main.165896eb.js"
   ]
 }
