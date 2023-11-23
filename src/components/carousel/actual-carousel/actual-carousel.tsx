@@ -28,13 +28,27 @@ export const Carousel: React.FC<CarouselProps> = ({ itemsarray }) => {
 	return (
 		<>
 			{scrollvalue <= 640 &&
-				<div className="nextbutton" onClick={() => scroll(320)}>{<FontAwesomeIcon icon={faChevronRight} />}</div>}
+				<div
+					className="nextbutton"
+					onClick={() => scroll(320)}>
+					{<FontAwesomeIcon icon={faChevronRight} />}
+				</div>
+			}
 			{scrollvalue > 10 &&
-				<div className="prevbutton" onClick={() => scroll(-320)}>{<FontAwesomeIcon icon={faChevronLeft} />}</div>}
+				<div
+					className="prevbutton"
+					onClick={() => scroll(-320)}>
+					{<FontAwesomeIcon icon={faChevronLeft} />}
+				</div>
+			}
 			<div className="item-box-wrapper" ref={ref}>
 				{
 					itemsarray.map((item => {
-						return <ItemBox name={item.name} imageurl={item.imgsrc} itemurl={item.itemurl} />
+						return <ItemBox
+							name={item.name}
+							imageurl={item.imgsrc}
+							itemurl={item.itemurl}
+						/>
 					}))
 				}
 			</div>

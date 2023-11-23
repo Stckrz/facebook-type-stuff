@@ -7,19 +7,18 @@ interface CommunityProps {
 	likes: boolean;
 	comments: number;
 	shares: number;
-
 }
 
 export const Community: React.FC<CommunityProps> = ({ likes, comments, shares }) => {
 
-
 	return (
 		<>
 			<div className="community-container">
-			<div><FontAwesomeIcon icon={faThumbsUp}/>{` ${likes === true && 1}`}</div>
-			<div>{`${comments} comments ${shares} shares`}</div>
+				<div><FontAwesomeIcon icon={faThumbsUp} />
+					{` ${likes === true && 1}`}
+				</div>
+				<div>{`${comments} comments ${shares} shares`}</div>
 			</div>
 		</>
 	)
-
 }

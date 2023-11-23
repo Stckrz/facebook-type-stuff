@@ -1,0 +1,32 @@
+.comment-field{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border-top: 1px solid #3D4042;
+}
+
+.input-field{
+	display: flex;
+	align-items: flex-start;
+	margin-top: 10px;
+	border: none;
+	background-color: #3A3B3C;
+	color: #AEB1B6;
+	font-size: medium;
+	font-weight: normal;
+	padding: 10px;
+	border-end-end-radius: 2em 2em;
+	border-start-end-radius: 2em 2em;
+	border-start-start-radius: 2em 2em;
+	border-end-start-radius: 2em 2em;
+
+	width: 95%;
+	height: 20px;
+}
+
+.input-field:focus{
+	outline-style: none;
+	height: 50px;
+	border-radius: 1em;
+
+}

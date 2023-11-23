@@ -13,7 +13,5 @@ export const ImagePostContent: React.FC<ImagePostContentProps> = ({ imgsrc }) =>
 				<img src={imgsrc}/>
 			</div>
 		</>
-
 	)
-
 }

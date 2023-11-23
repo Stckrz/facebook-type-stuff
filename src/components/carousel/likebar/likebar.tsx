@@ -9,15 +9,13 @@ import { LikeButton } from './likebutton/likebutton';
 library.add(
 	faComment,
 	faShare
-
 );
 
 interface LikeBarProps {
-	likes: boolean;
 	setLikes: Function;
 }
 
-export const LikeBar: React.FC<LikeBarProps> = ({ likes, setLikes }) => {
+export const LikeBar: React.FC<LikeBarProps> = ({ setLikes }) => {
 
 	return (
 		<>
