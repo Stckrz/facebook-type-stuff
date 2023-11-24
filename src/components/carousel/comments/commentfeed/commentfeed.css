@@ -1,0 +1,34 @@
+.comment-content-wrapper{
+	display: flex;
+	align-items: flex-start;
+	gap: 5px;
+	flex-direction: row;	
+	height: 100%;
+	width: 100%;
+	border-top: 1px solid #3D4042;
+}
+
+.comment-text-box{
+	margin-top: 20px;
+	font-size: small;
+	display: flex;
+	background-color: #3A3B3C;
+	flex-direction: column;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.commentbody{
+	font-weight: normal;
+}
+
+.comment-controls{
+	color: #B0B3B8;
+	font-size: 12px;
+}
+
+.pic-wrapper{
+	margin-top: 20px;
+	height: 35px;
+}
+

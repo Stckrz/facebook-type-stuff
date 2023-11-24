@@ -1,10 +1,13 @@
 import React from 'react';
 import './maincontainer.css';
 import { useState } from 'react';
-import { LikeBar } from "../likebar/likebar";
+import { LikeBar } from "components/carousel/likebar/likebar";
 import { Community } from '../community/community';
 import { CommentBar } from '../comments/newComment/commentbar/commentbar';
+import { CommentFeed } from '../comments/commentfeed/commentfeed';
+import { ProfilePic } from 'components/user-stuff/profile-image';
 import amazon from '../../../library/photos/amazon.jpg';
+import tom from '../../../library/photos/tom.jpeg';
 
 interface PostProps {
 	description: string;
@@ -13,7 +16,9 @@ interface PostProps {
 
 export const Post: React.FC<PostProps> = ({ description, children }) => {
 	const [likes, setLikes] = useState(false);
-	const [comments, setComments] = useState(0);
+	const [commentscount, setCommentscount] = useState(0);
+	const [comments, setComments] = useState([{username: "Tom", userimgurl: tom, textcontent: "this post sucks"}]);
+
 	const [shares, setShares] = useState(0);
 
 	return (
@@ -22,7 +27,7 @@ export const Post: React.FC<PostProps> = ({ description, children }) => {
 				<div className="top-bar">
 					<div>
 						<div className="company">
-							<img className="company-logo" src={amazon} />
+							<ProfilePic imgurl={amazon}/>
 							Amazon
 						</div>
 					</div>
@@ -34,13 +39,16 @@ export const Post: React.FC<PostProps> = ({ description, children }) => {
 					{children}
 				</div>
 				{likes === true &&
-					<div className="community"><Community likes={likes} comments={comments} shares={shares} /></div>}
+					<div className="community"><Community likes={likes} commentscount={commentscount} shares={shares} /></div>}
 				<div className="like-bar-container">
 					<LikeBar setLikes={setLikes} />
 				</div>
-				<div className="comment-container">
-					<CommentBar />
+					<div className="all-comments">
+					<CommentFeed commentsarray={comments} setComments={setComments}/>
 				</div>
+				<div className="comment-bar-container">
+					<CommentBar setComments={setComments} />
+					</div>
 			</div>
 		</>
 	)

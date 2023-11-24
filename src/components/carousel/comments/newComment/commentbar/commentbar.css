@@ -1,32 +1,112 @@
 .comment-field{
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
+	gap: 5px;
 	width: 100%;
-	border-top: 1px solid #3D4042;
 }
 
-.input-field{
+.input-wrapper{
 	display: flex;
-	align-items: flex-start;
-	margin-top: 10px;
-	border: none;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 45px;
+	width: 95%;	
+	padding-right: 30px;
 	background-color: #3A3B3C;
-	color: #AEB1B6;
-	font-size: medium;
-	font-weight: normal;
-	padding: 10px;
+	margin-top: 10px;
 	border-end-end-radius: 2em 2em;
 	border-start-end-radius: 2em 2em;
 	border-start-start-radius: 2em 2em;
 	border-end-start-radius: 2em 2em;
-
-	width: 95%;
-	height: 20px;
 }
 
-.input-field:focus{
+.input-field{
+	color: #A1A4A7;
+	display: flex;
+	border: none;
 	outline-style: none;
-	height: 50px;
+	background-color: #3A3B3C;
+	font-size: medium;
+	font-weight: normal;
+	width: 100%;
+	height: 40%;
 	border-radius: 1em;
+	padding: 10px;
+}
 
+input-field:focus{
+	width: 500px;
+}
+
+.input-wrapper:focus-within{
+	flex-direction: column;
+	align-items:first baseline;
+	padding-top: 0px;
+	height: 100px;
+	border-radius: 1em;
+	transition: height 0.25s;
+
+}
+
+.comment-icon-wrapper{
+	padding-left: 15px;
+	height: 30px;
+	width: 20%;
+	display: flex;
+	color: #A8ABAF;
+	scale: 125%;
+}
+
+.icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	aspect-ratio: 1/1;
+	border-radius: 2em;
+}
+
+.icon:hover{
+	background-color: #4e4f50;
+}
+
+.user-pic{
+	height: 40px;
+	margin-top: 10px;
+	aspect-ratio: 1/1;
+}
+
+
+
+.tooltip{
+	position: relative;
+	display: inline-block;
+}
+
+.tooltiptext{
+	display: inline-block;
+	font-weight: normal;
+	color: black;
+	font-size: x-small;
+	text-align: center;
+	visibility: hidden;
+	overflow: none;
+	word-wrap: unset;
+	width: max-content;
+	height: 10px;
+	line-height: 10px;
+	bottom: 100%;
+	right: -60px;
+	position: absolute;
+	z-index: 1;
+	background-color: #d2d3d3;
+	border-radius: 5px;
+	padding: 5px;
+	opacity: 90%;
+}
+
+.tooltip:hover .tooltiptext{
+	visibility: visible;
 }

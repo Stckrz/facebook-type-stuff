@@ -5,11 +5,11 @@ import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
 
 interface CommunityProps {
 	likes: boolean;
-	comments: number;
+	commentscount: number;
 	shares: number;
 }
 
-export const Community: React.FC<CommunityProps> = ({ likes, comments, shares }) => {
+export const Community: React.FC<CommunityProps> = ({ likes, commentscount, shares }) => {
 
 	return (
 		<>
@@ -17,7 +17,7 @@ export const Community: React.FC<CommunityProps> = ({ likes, comments, shares })
 				<div><FontAwesomeIcon icon={faThumbsUp} />
 					{` ${likes === true && 1}`}
 				</div>
-				<div>{`${comments} comments ${shares} shares`}</div>
+				<div>{`${commentscount} comments ${shares} shares`}</div>
 			</div>
 		</>
 	)

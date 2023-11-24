@@ -1,0 +1,15 @@
+.pic-container{
+	height: 100%;
+	width: 100%;
+}
+
+.profile-pic{
+	background-color: #231f20;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	border-radius: 50px;
+	object-fit: fill;
+}
+
+
