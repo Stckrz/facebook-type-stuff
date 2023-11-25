@@ -110,3 +110,11 @@ input-field:focus{
 .tooltip:hover .tooltiptext{
 	visibility: visible;
 }
+
+.gifpicker{
+	position: absolute;
+	left: 500px;
+	background-color: black;
+	height: 500px;
+	z-index: 1;
+}

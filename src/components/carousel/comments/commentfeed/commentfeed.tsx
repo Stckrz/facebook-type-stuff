@@ -8,6 +8,7 @@ interface CommentsArray {
 	username: string;
 	userimgurl: string;
 	textcontent?: string;
+	imgcontent?: string;
 
 
 }
@@ -37,6 +38,7 @@ export const CommentFeed: React.FC<CommentFeedProps> = ({ commentsarray }) => {
 								<div className="comment-text-box">
 									<div>{item.username}</div>
 									<div className="commentbody">{item.textcontent}</div>
+									<img src={item.imgcontent}/>
 								</div>
 								<div className="comment-controls">42m Like  Reply  Share</div>
 							</div>

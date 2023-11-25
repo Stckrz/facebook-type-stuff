@@ -17,7 +17,7 @@ interface PostProps {
 export const Post: React.FC<PostProps> = ({ description, children }) => {
 	const [likes, setLikes] = useState(false);
 	const [commentscount, setCommentscount] = useState(0);
-	const [comments, setComments] = useState([{username: "Tom", userimgurl: tom, textcontent: "this post sucks"}]);
+	const [comments, setComments] = useState([{username: "Tom", userimgurl: tom, imgcontent: "", textcontent: "this post sucks"}]);
 
 	const [shares, setShares] = useState(0);
 
@@ -47,7 +47,7 @@ export const Post: React.FC<PostProps> = ({ description, children }) => {
 					<CommentFeed commentsarray={comments} setComments={setComments}/>
 				</div>
 				<div className="comment-bar-container">
-					<CommentBar setComments={setComments} />
+					<CommentBar setComments={setComments} commentsarray={comments} />
 					</div>
 			</div>
 		</>

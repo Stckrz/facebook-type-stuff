@@ -5,7 +5,7 @@
 	flex-direction: row;	
 	height: 100%;
 	width: 100%;
-	border-top: 1px solid #3D4042;
+	/* border-top: 1px solid #3D4042; */
 }
 
 .comment-text-box{
